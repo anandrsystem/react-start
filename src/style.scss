@@ -1,9 +1,11 @@
 $bluegrey: #2b3a42;
 $fontSize: 12px;
+$imagePath: './assets/images/';
 
 pre {
   padding: 8px 16px;
   background: $bluegrey;
+  background: $bluegrey url($imagePath + "/code.png") no-repeat center center / 32px 32px;
   color: #e1e6e9;
   font-family: Menlo, Courier, monospace;
   font-size: $fontSize;
