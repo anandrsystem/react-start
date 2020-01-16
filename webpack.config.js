@@ -4,8 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, '/build'),
-    filename: 'bundlefile.js'
+    path: path.resolve(__dirname, 'build'),
+    filename: 'main.bundle.js'
   },
   module: {
     rules: [
@@ -15,8 +15,21 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.scss$/,
+        use: [{
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader'
+        }, {
+          loader: 'sass-loader'
+        }]
       }
     ]
+  },
+  stats: {
+    colors: true
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -10,7 +10,9 @@ import {
 } from "react-router-dom";
 
 const App = () => (
-  <div>Hello world !!</div>
+  <pre>
+    <div>Hello world !!</div>
+  </pre>
 )
 
 export default App;
