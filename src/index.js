@@ -15,7 +15,7 @@ import App from './components/App';
 // // console.log(store.getState());
 
 ReactDOM.render(<App />, document.getElementById('App')
-//   <Provider store={store}>
-//     <App />
-//   </Provider>, document.getElementById('App')
+  //   <Provider store={store}>
+  //     <App />
+  //   </Provider>, document.getElementById('App')
 )
