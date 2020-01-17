@@ -1,0 +1,16 @@
+$imagePath: "./assets/images/";
+
+.header-inner {
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+  background: url($imagePath+"hdr_bg-min.png") #013350;
+}
+
+.header-inner .logo {
+  background: url($imagePath+"logo_white.svg") no-repeat;
+  width: 115px;
+  height: 23px;
+}

@@ -14,7 +14,7 @@ import App from './components/App';
 // const store = createStore(rootReducer);
 // // console.log(store.getState());
 
-ReactDOM.render(<App />, document.getElementById('App')
+ReactDOM.render(<App />, document.getElementById('root')
   //   <Provider store={store}>
   //     <App />
   //   </Provider>, document.getElementById('App')
