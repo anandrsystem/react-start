@@ -47,3 +47,32 @@
   bottom: -11px;
   width: 100%;
 }
+
+.btn-default {
+  color: #666666;
+  background-color: #fff;
+  border: 1px solid #c2cbce;
+  padding: 0 10px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  min-height: 30px;
+  font-size: 14px;
+}
+
+.btn-default:hover {
+  color: #006bb8;
+  background: #f0f0f0;
+}
+
+.toggle-button.btn-default {
+  box-shadow: none;
+}
+
+.toggle-button.btn-default:hover,
+.toggle-button.btn-default.active {
+  box-shadow: inset -1px 0px 13px 3px rgba(0, 0, 0, 0.33);
+}
+
+.d-none {
+  display: none;
+}

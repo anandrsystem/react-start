@@ -1,21 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Provider } from 'react-redux';
-// import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
 import './style.scss';
 
 import App from './components/App';
-// import rootReducer from './reducers';
+import rootReducer from './reducers';
 
-// //intialize store
-// // const createStoreWithMiddleware = applyMiddleware()(createStore);
-// // const store = createStoreWithMiddleware(rootReducer)
-// const store = createStore(rootReducer);
-// // console.log(store.getState());
+//intialize store
+const store = createStore(rootReducer);
+console.log(store.getState());
 
-ReactDOM.render(<App />, document.getElementById('root')
-  //   <Provider store={store}>
-  //     <App />
-  //   </Provider>, document.getElementById('App')
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>, document.getElementById('root')
 );
