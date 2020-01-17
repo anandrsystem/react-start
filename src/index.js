@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import { Provider } from 'react-redux';
 // import { createStore, applyMiddleware } from 'redux';
 
-import './style.scss'
+import './style.scss';
 
 import App from './components/App';
 // import rootReducer from './reducers';
@@ -18,4 +18,4 @@ ReactDOM.render(<App />, document.getElementById('App')
   //   <Provider store={store}>
   //     <App />
   //   </Provider>, document.getElementById('App')
-)
+);
