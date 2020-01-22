@@ -1,6 +1,11 @@
-import { ADD_BLOG } from '../constants/actionTypes';
+import { ADD_BLOG, DELETE_BLOG } from '../constants/actionTypes';
 
-export const addBlog = data => ({
+export const addBlog = blogText => ({
   type: ADD_BLOG,
-  data
+  blogText
+});
+
+export const deleteBlog = blogText => ({
+  type: DELETE_BLOG,
+  blogText
 });
