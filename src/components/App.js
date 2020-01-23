@@ -11,7 +11,7 @@ import Header from './shared/Header';
 const routes = (
   <Router>
     <Route exact path="/" component={Home}></Route>
-    <Route exact path="/blog" component={AddBlog}></Route>
+    <Route path="/blog" component={AddBlog}></Route>
     <Route path="/login" component={Login}></Route>
     <Route path="/dashboard" component={Dashboard}></Route>
   </Router>
