@@ -1,3 +1,5 @@
+$imagePath: "./assets/images/";
+
 footer {
   padding: 15px;
   background: #6a6a6a;
@@ -6,6 +8,7 @@ footer {
   min-height: 100px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 footer .footer-nav ul {
@@ -29,8 +32,13 @@ footer .footer-nav ul li a:hover {
 footer .provided {
   color: #a6a6a6;
   text-transform: uppercase;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 
-footer .f-logo img {
-  max-width: 97px;
+footer .f-logo {
+  background: url($imagePath+"logo_white.svg") no-repeat;
+  width: 97px;
+  height: 20px;
 }

@@ -12,9 +12,7 @@ const Footer = () => {
       </div>
       <div className="provided">
         <div> Provided By </div>
-        <div className="f-logo">
-          <img src="../src/assets/images/logo_white.svg" />
-        </div>
+        <div className="f-logo"></div>
       </div>
     </footer>
   );
